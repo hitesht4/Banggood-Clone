@@ -1,0 +1,139 @@
+
+.Li:hover{
+ color:orangered;
+ text-decoration: underline;
+}
+.Input{
+    width:60% !important;
+}
+.nav{
+    background-color:#2d2d38;
+    width:90%;
+}
+.splash{
+   grid-area:1/1/5/2;
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.slideShow{
+    grid-area:1/2/3/6;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.flash{
+    grid-area: 3/2/4/6;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.user{
+    grid-area:1/6/4/7;
+    padding:5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.Slides{
+width:90%;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(6,1fr);
+grid-template-rows:190px 190px 200px;
+grid-gap: 10px;
+}
+.Profile{
+ height:50%;
+ background-color: white;
+}
+.Ul{
+    list-style: none;
+    text-align: start;
+    font-size: 15px;
+    line-height: 40px;
+    margin-left: -15px;
+}
+.List{
+background-color: white;
+display:flex;
+height:50%;
+flex-direction: column;
+justify-content: space-evenly;
+}
+.welcome{
+    font-weight: bold;
+}
+.click{
+    background-color: #ff6e26 !important;
+    margin:5px;
+    border-radius: 40px !important;
+    border:none !important;
+    width:100px;
+}
+.List>li:hover{
+    text-decoration: underline;
+    color:#ff6e26;
+    font-weight: bold;
+    cursor:pointer;
+}
+.Ul>li:hover{
+    text-decoration: underline;
+    color:#ff6e26;
+    font-weight: bold;
+    cursor:pointer;
+}
+.SignUP{
+    
+    width:500px;
+    margin:auto;
+    padding:30px;
+    border:1px solid;
+}
+.control{
+    display:flex;
+    width:400px;
+    justify-content: space-between;
+    margin:auto;
+}
+.control>div{
+   flex:1;
+   text-align: center;
+   padding:20px;
+   font-size: 20px;
+   font-weight: bold;
+}
+.ContainerIn{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width:400px;
+    margin:40px auto;
+    background-color: white;
+}
+.LoginNav{
+    background-color: white;
+    padding:15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.loginFooter{
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height:300px;
+    margin-top:50px;
+    text-align: center;
+    padding-top:30px;  
+}
+.foot{
+    margin:40px auto;
+    display:flex;
+    border-right:1px solid;
+    width:600px;
+    color:grey;
+}
+.foot>li{
+    border-left: 1px solid grey;
+    padding-left:10px;
+    padding-right:10px;
+    list-style: none;
+    color:grey;
+    
+}
+.foot>li:hover{
+text-decoration: underline;
+color:black;
+
+}
+img:hover{
+filter: drop-shadow(0px 0px 3px gray);
+}
