@@ -1,0 +1,44 @@
+.tableTotal{
+    margin:auto;
+    width:200px;
+    height:200px;
+    text-align: center;
+    font-size:20px;
+    /* border:1px solid; */
+}
+.table_div{
+    width:300px;
+    margin:auto;
+    border:1px solid;
+    padding:20px;
+}
+
+.total{
+    font-size: 20px;
+    font-weight: bold;
+    font-weight: bolder;
+}
+.checkout{
+    padding:14px;
+    width:192%;
+    border:none;
+    background-color:#ff4b31;
+    color:white;
+    border-radius:5px;
+}
+.CartContainer{
+    display:flex;
+    margin:1px solid;
+    margin:30px auto;
+    width:90%;
+    height:800px;
+}
+.Product_div{
+    flex:7;
+    border:1px solid black;
+    height:100%;
+}
+
+
+
+

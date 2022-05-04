@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState ,useContext } from 'react';
 import AllProducts from '../Components/AllProducts';
 import Navabar from '../Components/Navabar';
 import styled from 'styled-components';
@@ -6,6 +6,7 @@ import Navigation from '../Components/Navigation';
 import Slide from '../Components/Slide';
 import Sidebar from '../Components/Sidebar';
 import Footer from '../Components/Footer';
+import {Context} from '../Context/ContextProvider';
 
 
 const Header=styled.div`
@@ -36,8 +37,9 @@ gap:40px;
 `;
 
 const Mens = () => {
-const [prod,setProd]=useState([]);
-const [val,setVal]=useState(prod)
+
+
+const {prod,val,setProd,setVal,getData}=useContext(Context);
 
 
   const Sort=(value,type)=>{
@@ -93,15 +95,8 @@ const [val,setVal]=useState(prod)
       setProd([...F])
   }
 
-
-const getData=async()=>{
-let r=await fetch("http://localhost:8080/data?type=m");
-let data =await r.json();
- setProd([...data]);
- setVal([...data]);
-}
   useEffect(()=>{
-        getData();     
+        getData("m");     
   },[])
   return (
     <>

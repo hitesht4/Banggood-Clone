@@ -3,6 +3,7 @@ import styles from './style.css';
 import styled from 'styled-components';
 import { Button,ButtonGroup } from 'react-bootstrap';
 import Recomendations from './Recomendations'
+import { CartState } from "../Context/ContextProvider";
 
 const Container=styled.div`
 width:90%;
@@ -42,6 +43,11 @@ gap:10px;
 `;
 
 const SingleCard = (props) => {
+    const {
+    state: { cart },
+    dispatch,
+  } = CartState();
+  console.log(cart);
   return (
     <Container>
      <Div1>
@@ -79,12 +85,26 @@ const SingleCard = (props) => {
       <Button className="m-1 px-4 py-2 Sizebtn" style={{border:"3px solid #ff4b31",backgroundColor:"white", color:"grey"}}>CN</Button>
 </div>
  <div className="mb-2 mt-5">
-    <Button className="p-3 px-4 mx-3" size="lg" style={{backgroundColor:"#ff2b2a", border:"none"}}>
-      BUY NOW
-    </Button>{' '}
-    <Button className="p-3 px-4 mx-3" size="lg" style={{backgroundColor:"#ff9900", border:"none"}}>
-      ADD TO CART
-    </Button>
+   {cart.some((p) => p.id === props.id) ? (
+            <Button className="px-3 py-3" style={{border:"none"}}
+              variant="danger"
+              onClick={() =>
+                dispatch({
+                  type: "REMOVE_FROM_CART",
+                  payload: props,
+                })
+              }
+            >
+              Remove from Cart
+            </Button>
+          ) : (
+            <Button className="px-5 py-3" style={{border:"none"}}
+              onClick={() =>
+                dispatch({
+                  type: "ADD_TO_CART",
+                  payload: props,
+                })
+              }>Buy Now</Button>)}
   </div>  
      </Div2>
     </Container>

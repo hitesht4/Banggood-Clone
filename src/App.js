@@ -6,7 +6,7 @@ import {BrowserRouter,Routes, Route} from 'react-router-dom';
 import Product from './Components/Product';
 import Womens from './Pages/Womens';
 import Mens from './Pages/Mens';
-import DropDown from './Components/DropDown';
+import Totaltable from './Components/Totaltable';
 import SingleProduct from './Pages/SingleProduct';
 
 
@@ -21,8 +21,9 @@ function App() {
     <Route path="/Mens" element={<Mens/>}/>
     <Route path="/Cart" element={<Cart/>}/>
     <Route path="/SingleProduct" element={<SingleProduct/>}/>
-  </Routes>
-  {/* <SingleCard/> */}
+  </Routes> 
+   
+   
    </>
   );
 }

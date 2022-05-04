@@ -6,11 +6,17 @@ import {CgProfile} from 'react-icons/cg';
 import {AiOutlineShoppingCart} from 'react-icons/ai';
 import {Navbar,Container,InputGroup,Button,FormControl} from 'react-bootstrap';
 import {useNavigate} from 'react-router-dom';
+import { CartState } from "../Context/ContextProvider";
 
 
 
 
 const Navabar = () => {
+    const {
+    state: { cart },
+    dispatch,
+    productDispatch,
+  } = CartState();
   const Navigate=useNavigate();
    const Move=(route)=>{
    Navigate(route);
@@ -41,6 +47,7 @@ const Navabar = () => {
           </div>
      <AiOutlineShoppingCart style={{color:"white",fontSize:"40px",margin:"20px"}}
      onClick={()=>Move("/Cart")}/>
+     <div style={{color:"white"}}>{cart.length}</div>
     </Container>
   </Navbar>
 </Container>

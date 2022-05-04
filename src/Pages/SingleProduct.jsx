@@ -7,7 +7,7 @@ import Recomendations from '../Components/Recomendations';
 
 const SingleProduct = () => {
   const[data,setdata]=useState([]);
-  const {id,setId}=useContext(Context);
+  const {id}=useContext(Context);
 
    
   const getData=async()=>{
@@ -31,7 +31,7 @@ const SingleProduct = () => {
                 <>
                  <SingleCard {...item}/>
                  <div>
-                <Recomendations/>
+                   <Recomendations/>
                    <Footer/>
                  </div>
                 </>
