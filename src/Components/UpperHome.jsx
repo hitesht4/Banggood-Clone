@@ -7,6 +7,7 @@ import {GiReturnArrow} from 'react-icons/gi';
 import {Button} from 'react-bootstrap';
 import profile from '../profile.png';
 import Navigation from './Navigation';
+import flash from '../flash.png';
 
 
 const UpperHome = () => {
@@ -19,7 +20,7 @@ const UpperHome = () => {
             <Carausal/>
         </div>
         <div className={styles.flash}>
-        <img style={{width:"100%",height:"100%"}}src=" https://i1.wp.com/opcoupon.com/wp-content/uploads/2021/10/banggood-coupon-shock-1.jpg?resize=950%2C267&ssl=1" alt="" />   
+        <img style={{width:"100%",height:"100%"}}src={flash} alt="" />   
         </div>
 
 
@@ -28,7 +29,7 @@ const UpperHome = () => {
 
          <div className={styles.Profile}>
 
-             <img src={profile} alt="" style={{height:"70%" ,width:"100%"}}/>
+             <img src={profile} alt="" style={{height:"70%",width:"100%"}}/>
              <h5 >Welcome To Banggood</h5>
              <div>
               <Button className={styles.click}>Sign In</Button>

@@ -114,6 +114,10 @@ justify-content: space-evenly;
     text-align: center;
     padding-top:30px;  
 }
+.Navlits:hover{
+    text-decoration: underline;
+    color:#ff6e26;
+}
 .foot{
     margin:40px auto;
     display:flex;
@@ -134,6 +138,10 @@ text-decoration: underline;
 color:black;
 
 }
-img:hover{
+.Photo:hover{
 filter: drop-shadow(0px 0px 3px gray);
+cursor:pointer;
+} 
+.Product:hover{
+    cursor:pointer;
 }

@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
-import DropDown from './DropDown';
-import styles from './style.css';
+import './style.css';
 
 
 const Sidebar = ({Sort,filterBtn,filterBrand,filterCat}) => {
@@ -12,19 +11,19 @@ const Sidebar = ({Sort,filterBtn,filterBrand,filterCat}) => {
     const [open5,isOpen5]=useState(true);
 
     const handleDrop=(value)=>{
-      if(value==0){
+      if(value===0){
           isOpen(!open);
       }
-      else if(value==1){
+      else if(value===1){
         isOpen1(!open1);
       }
-      else if(value==2){
+      else if(value===2){
         isOpen2(!open2);
       }
-      else if(value==3){
+      else if(value===3){
         isOpen3(!open3);
       }
-      else if(value==4){
+      else if(value===4){
         isOpen4(!open4);
       }
       else{

@@ -1,4 +1,4 @@
-import React, { useEffect, useState,useContext } from 'react';
+import React, { useEffect,useContext } from 'react';
 import AllProducts from '../Components/AllProducts';
 import Navabar from '../Components/Navabar';
 import styled from 'styled-components';
@@ -37,12 +37,12 @@ gap:40px;
 `;
 
 const Womens = () => {
-const {prod,val,setProd,setVal,getData}=useContext(Context);
+const {prod,val,setProd,getData}=useContext(Context);
 
 
   const Sort=(value,type)=>{
 
-  if(type=="P"){
+  if(type==="P"){
     if(value==="Low"){
       prod.sort(function(a,b){
         return a.price-b.price;
@@ -74,29 +74,28 @@ const {prod,val,setProd,setVal,getData}=useContext(Context);
   }
   const filterBtn=(col)=>{
     const F=val.filter(item=>
-        item.color==col
+        item.color===col
     )
     setProd([...F]);
     console.log(F);
   }
   const filterBrand=(value)=>{
     const F=val.filter(item=>
-          item.brand==value
+          item.brand===value
     )
         setProd([...F]);
         
   }
   const filterCat=(value)=>{
     const F=val.filter(item=>
-      item.category==value
+      item.category===value
       )
       setProd([...F])
   }
 
   useEffect(()=>{
-        getData("w");
-        
-    },[])
+    getData("w");     
+  },[])
   return (
     <>
     <Navabar/>

@@ -47,7 +47,7 @@ const SingleCard = (props) => {
     state: { cart },
     dispatch,
   } = CartState();
-  console.log(cart);
+
   return (
     <Container>
      <Div1>

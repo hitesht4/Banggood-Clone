@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Capture from '../Capture.PNG';
 
 const Main=styled.div`
 display:flex;
@@ -12,15 +13,12 @@ width:50%;
 display:grid;
 grid-template-rows:200px 200px 200px;
 height:600px;
-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 `;
 const Container2=styled.div`
 width:50%;
 display:grid;
 grid-template-rows:300px 300px;
 height:600px;
-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-
 `;
 const Pic=styled.img`
  width:100%;
@@ -44,14 +42,24 @@ padding:10px;
 const Part3=styled.div`
 width:30%;
 `;
+const Full=styled.div``
 
 
 
 const HotDeals = () => {
   return (
+<>
+<div style={{width:"90%", margin:"auto",display:"flex",gap:"20px"}} className="mt-3">
+    <div style={{flex:1}}>
+      <img src={Capture} alt="" style={{width:"100%",height:"100%"}}/>
+    </div>
+    <div style={{flex:1}}>
+      <img src={Capture} alt="" style={{width:"100%",height:"100%"}}/>
+    </div>
+</div>
 <Main>
    <Container1>
-        
+
 <Line1>
     
     <div>
@@ -122,7 +130,7 @@ const HotDeals = () => {
  <Container2>
      
      <Line1>
-    {/* <div><h4>PreOrder</h4></div> */}
+    
        <Part3>
           <Pic2 src="https://imgaz.staticbg.com/thumb/grid/oaupload/banggood/images/A4/A8/50580b39-1e82-446c-91dc-14c7d4bda9fc.jpg.webp" alt="" />
           <h6>58,372.77</h6>
@@ -155,7 +163,8 @@ const HotDeals = () => {
      
      </Line1>
  </Container2>
-    </Main>
+</Main>
+</>
   )
 };
 

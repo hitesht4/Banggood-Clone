@@ -1,22 +1,28 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState ,useContext } from "react";
 import { Button, Col, Form, Image, ListGroup, Row } from "react-bootstrap";
 import { AiFillDelete } from "react-icons/ai";
+import {Context} from '../Context/ContextProvider';
 import { CartState } from "../Context/ContextProvider";
-// import Navabar from '../Components/Navabar';
-import styles from '../Components/Cartstyles.css';
+import  '../Components/Cartstyles.css';
 import Navabar from "../Components/Navabar";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
+  const navigate=useNavigate();
+  const {total,handleTotal}=useContext(Context);
+
   const {
     state: { cart },
     dispatch,
   } = CartState();
-  const [total, setTotal] = useState();
+  
+
+  const handleClick=()=>{
+    navigate("/payement")
+  }
 
   useEffect(() => {
-    setTotal(
-      cart.reduce((acc, curr) => acc + Number(curr.price) * curr.qty, 0)
-    );
+    handleTotal(cart);
   }, [cart]);
 
   return (
@@ -84,7 +90,8 @@ const Cart = () => {
         type="button" 
         disabled={cart.length === 0} 
         variant="danger" 
-        className="py-3">
+        className="py-3 Checkout"
+        onClick={handleClick}>
           Proceed to Checkout
         </Button>
       </div>

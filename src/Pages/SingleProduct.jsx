@@ -4,29 +4,23 @@ import {Context} from '../Context/ContextProvider';
 import Footer from '../Components/Footer';
 import Navabar from '../Components/Navabar';
 import Recomendations from '../Components/Recomendations';
+import {useParams} from 'react-router-dom';
 
 const SingleProduct = () => {
-  const[data,setdata]=useState([]);
-  const {id}=useContext(Context);
+  const params=useParams();
+  const {id}=params;
+  const {prod,getData}=useContext(Context);
 
-   
-  const getData=async()=>{
-    let res=await fetch(`http://localhost:8080/data?id=${id}`);
-    let data=await res.json();
-   
-    setdata([...data]);
-     
-  }
-
+  
   useEffect(() => {
-    getData();
+    getData(undefined ,id);
   }, []);
 
   return (
     <>
     <Navabar/>
  <div>
-        {data.map(item=>{
+        {prod.map(item=>{
             return(
                 <>
                  <SingleCard {...item}/>
@@ -43,4 +37,4 @@ const SingleProduct = () => {
   )
 }
 
-export default SingleProduct
+export default SingleProduct;

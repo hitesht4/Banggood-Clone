@@ -7,6 +7,7 @@ import {AiFillFacebook,AiFillTwitterSquare,AiFillInstagram,AiFillYoutube,AiOutli
 import {FaTiktok,FaBlogger,FaHeadphones,FaShippingFast,FaMedal} from 'react-icons/fa';
 import {CgDollar} from 'react-icons/cg';
 import {FiHome} from 'react-icons/fi';
+import footer from '../footer.PNG';
 
 
 const FooterDiv=styled.div`
@@ -32,11 +33,13 @@ const Part=styled.div`
 text-align:center;
  flex:1;
  padding:20px;
-
+`;
+const Main=styled.div`
+background-color:smokewhite;
 `;
 const Footer = () => {
   return (
-      <>
+      <Main>
       <FooterDiv style={{width:"90%",margin:"auto"}}>
           <Part>
               <FaMedal style={{fontSize:"55px",color:"grey"}}/><br/>
@@ -148,9 +151,12 @@ const Footer = () => {
            </div>
 
        </FooterPart>
-
     </FooterDiv>
-    </>
+
+    <div style={{width:"100%",margin:"auto"}}>
+        <img  style={{width:"100%"}} src={footer} alt="" />
+    </div>
+    </Main>
   )
 }
 

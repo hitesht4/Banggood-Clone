@@ -1,5 +1,6 @@
 import React,{useContext} from 'react';
 import styled from 'styled-components';
+import styles from './styles.module.css';
 import {Context} from '../Context/ContextProvider';
 
 const Div=styled.div`
@@ -19,9 +20,8 @@ const Product = (props) => {
   const {HandleProduct}=useContext(Context);
 
   return (
-    <Div onClick={()=>{HandleProduct(props.id)}}>
-        <Pic src={props.image} alt="" />
-      
+    <Div onClick={()=>{HandleProduct(props.id)}} className={styles.Product}>
+        <Pic src={props.image} alt="" className={styles.Photo}/>
        <div style={{padding:"10px"}}>
        <h5 style={{color:"#ff6e26"}}>${props.price}</h5>
        <p style={{fontSize:"13px"}}>{props.name}</p>
