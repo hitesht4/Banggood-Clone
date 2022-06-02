@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Banggood Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## _Features :_
 
-## Available Scripts
+---
+- Login/SignUp
+- Home Page
+- Product Pages
+- Product details page.
+- Checkout pages.     
 
-In the project directory, you can run:
+<h2>Steps To Navigate The Website</h2>
+<ul>
+    <li>On Home Page user can use the Navbar to navigate through the website.</li>
+    <li>Once the user has logged in, they are taken back to the Landing Page.</li>
+    <li>On the Home page, the user can navigate to the following categories : Womens, Mens,</li>
+    <li>On the Product's page, the user can sort/filter all the product through colours,category and prices.</li>
+    <li>
+        On clicking Each product in Mens/Womens section it will redirect to the single product Page which will provide the option to add/remove the product from the cart with all its details.
+    </li>
+    <li>
+        If the user clicks on the add to cart, product will be added.and the button's functionality will change to remove from cart. 
+    </li>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  
+<li> In Shopping Bag page 
+        <ul>
+            <li>The user can remove a product from the shopping bag.</li>
+            <li>Change the quantity of the product.</li>
+            <li> Total of all the products will be displayed</li>
+        </ul>
+</li> 
+    <li>
+       On proceeding to Checkout, the user is asked to.
+       <ul>
+           <li>Fill their address and contact details</li>
+           <li>Select a Shipping Method</li>
+           <li>Enter their Credit/Debit card details</li>
+           <li>Place the Order wif coupon code</li>
+       </ul>
+    </li>
+</ul>
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## _ScreenShots :_
 
-### `npm run build`
+---
+### Login/Signup Page
+<img width="1065" alt="SignIn" src="https://user-images.githubusercontent.com/97459069/171628418-7f46533e-67ea-4351-b9d9-2f9af1bc901b.PNG">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Home Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img width="988" alt="Banggood  (3)" src="https://user-images.githubusercontent.com/97459069/171625444-99ed7562-d964-4a2f-8197-5c4152a697eb.png">
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### ProductPage
+<img width="956" alt="Mens" src="https://user-images.githubusercontent.com/97459069/171628560-06b03f0d-aaf2-4fa8-ac51-74f2846fb246.PNG">
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Product Details Page
+<img width="1033" alt="Single" src="https://user-images.githubusercontent.com/97459069/171628887-f4f9bd8d-525c-477f-9905-ef3d1e802b23.PNG">
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Cart Page
+<img width="1080" alt="Cart" src="https://user-images.githubusercontent.com/97459069/171629449-d5540d8c-6073-48a8-891e-6205db46bb24.PNG">
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Checkout Page
+<img width="1064" alt="Checkout" src="https://user-images.githubusercontent.com/97459069/171629561-5bfed827-a175-4fd7-93ee-98082aee589f.PNG">
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## _Authors :_
+#### Hitesh Tarwani
