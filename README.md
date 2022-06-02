@@ -75,5 +75,17 @@
 
 ---
 
+## _Tech Stack Used :_
+
+---
+- React-router-Dom @v6
+- React-Bootstrap
+- Local Storage
+- Javascript
+- Context-Api
+- React.Js    
+
+---
+
 ## _Authors :_
 #### Hitesh Tarwani
