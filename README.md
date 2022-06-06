@@ -2,8 +2,10 @@
 
 #### International online selling service from China with International shipping
 
-## _Features :_
+## _Live Demo :_
+https://illustrious-centaur-362a7e.netlify.app
 
+## _Features :_
 ---
 - Login/SignUp
 - Home Page
@@ -77,11 +79,12 @@
 
 ---
 
-## _Tech Stack Used :_
+## _Tech Used :_
 
 ---
 - React-router-Dom @v6
 - React-Bootstrap
+- React Icons
 - Local Storage
 - Javascript
 - Context-Api
